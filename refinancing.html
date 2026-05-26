@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mortgage Refinancing | Synergy Capital Mortgages Inc. — Edmonton</title>
+<meta name="description" content="Refinance your Edmonton mortgage to lower payments, consolidate debt, or access home equity with Synergy Capital Mortgages.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --pine:#24262b; --pine-2:#32363f; --leaf:#6b82a6;
+    --clay:#44597a; --clay-soft:#7089ac;
+    --cream:#f5f4f0; --cream-2:#ecebe5; --surface:#ffffff;
+    --ink:#2a2d33; --muted:#6c7077; --line:rgba(36,38,43,.14);
+    --font-display:"Fraunces",Georgia,serif;
+    --font-body:"Hanken Grotesk",system-ui,sans-serif;
+  }
+  *{ box-sizing:border-box; margin:0; padding:0; }
+  body{ font-family:var(--font-body); color:var(--ink); background:var(--cream); line-height:1.65; -webkit-font-smoothing:antialiased; }
+  img{ max-width:100%; display:block; }
+  .wrap{ max-width:1200px; margin:0 auto; padding:0 1.5rem; }
+  .eyebrow{ font-size:.72rem; letter-spacing:.26em; text-transform:uppercase; color:var(--clay); font-weight:700; }
+  h1,h2,h3{ font-family:var(--font-display); font-weight:600; line-height:1.12; color:var(--pine); }
+  .btn{ display:inline-block; text-decoration:none; font-weight:600; font-size:.95rem; padding:.85rem 1.6rem; border-radius:999px; transition:transform .2s, background .2s, color .2s; }
+  .btn--clay{ background:var(--clay); color:#fff; box-shadow:0 10px 24px -10px rgba(68,89,122,.45); }
+  .btn--clay:hover{ background:var(--pine); transform:translateY(-2px); }
+
+  .phero{ background:radial-gradient(800px 420px at 90% -20%, rgba(68,89,122,.10), transparent 60%), var(--cream); padding:4.5rem 0 3rem; }
+  .phero .crumbs{ font-size:.85rem; color:var(--muted); margin-bottom:1.2rem; }
+  .phero .crumbs a{ color:var(--clay); text-decoration:none; }
+  .phero h1{ font-size:clamp(2.2rem,4.5vw,3.4rem); max-width:18ch; }
+  .phero h1 em{ font-style:italic; color:var(--clay); }
+  .phero p{ color:var(--muted); font-size:1.1rem; max-width:54ch; margin:1.2rem 0 1.8rem; }
+
+  .section{ padding:4rem 0; }
+  .split{ display:grid; grid-template-columns:1fr 1fr; gap:3rem; align-items:center; }
+  .split img{ border-radius:20px; height:420px; width:100%; object-fit:cover; box-shadow:0 30px 70px -40px rgba(36,38,43,.5); }
+  .split h2{ font-size:clamp(1.8rem,3.2vw,2.4rem); margin-bottom:1rem; }
+  .split p{ color:var(--muted); margin-bottom:1rem; }
+
+  /* reasons grid */
+  .reasons{ background:var(--cream-2); }
+  .reasons__grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:1.5rem; margin-top:2.5rem; }
+  .reason{ background:var(--surface); border:1px solid var(--line); border-radius:18px; padding:1.8rem; }
+  .reason .ic{ width:46px; height:46px; border-radius:12px; background:var(--pine); color:#fff; display:grid; place-items:center; font-size:1.3rem; margin-bottom:1rem; }
+  .reason h3{ font-size:1.18rem; margin-bottom:.4rem; }
+  .reason p{ color:var(--muted); font-size:.94rem; }
+
+  .feature{ display:grid; grid-template-columns:1fr 1fr; gap:3rem; align-items:center; }
+  .feature img{ border-radius:20px; height:380px; width:100%; object-fit:cover; box-shadow:0 30px 70px -40px rgba(36,38,43,.5); }
+  .feature h2{ font-size:clamp(1.7rem,3vw,2.2rem); margin-bottom:1rem; }
+  .feature ul{ list-style:none; display:grid; gap:.8rem; margin-top:1rem; }
+  .feature li{ display:flex; gap:.7rem; color:var(--muted); }
+  .feature li::before{ content:"✓"; color:var(--leaf); font-weight:700; }
+
+  .section__head{ max-width:60ch; }
+  .section__head h2{ font-size:clamp(1.8rem,3.2vw,2.4rem); margin:.6rem 0; }
+
+  .cta{ background:radial-gradient(700px 400px at 0% 0%, rgba(68,89,122,.16), transparent 60%), var(--pine); color:#e9eaee; border-radius:26px; padding:3rem; text-align:center; }
+  .cta h2{ color:#fff; font-size:clamp(1.8rem,3.2vw,2.4rem); }
+  .cta p{ color:#b9bcc2; margin:.9rem auto 1.6rem; max-width:50ch; }
+
+  @media (max-width:920px){
+    .split,.feature,.reasons__grid{ grid-template-columns:1fr; }
+    .split img,.feature img{ height:300px; }
+  }
+</style>
+</head>
+<body>
+
+<div id="site-header"></div>
+
+<section class="phero">
+  <div class="wrap">
+    <div class="crumbs"><a href="index.html">Home</a> &nbsp;/&nbsp; Refinancing</div>
+    <p class="eyebrow">Service 02</p>
+    <h1>Make the equity you've built <em>work</em> for you.</h1>
+    <p>Refinancing can lower your monthly payment, roll high-interest debt into one manageable amount, or free up cash for a renovation or investment. We'll show you whether the numbers make sense — honestly.</p>
+    <a class="btn btn--clay" href="index.html#contact">See if refinancing pays off</a>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap split">
+    <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1000&q=80" alt="Comfortable living room in a refinanced home">
+    <div>
+      <p class="eyebrow">Refinance with intent</p>
+      <h2>One mortgage, working harder.</h2>
+      <p>Your home is likely your largest asset. Refinancing replaces your current mortgage with a new one — ideally at a better rate or with access to your equity — so your money does more than sit in the walls.</p>
+      <p>We model the break-even on any penalty against your savings, so you only refinance when it genuinely puts you ahead.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section reasons">
+  <div class="wrap">
+    <div class="section__head"><p class="eyebrow">Why people refinance</p><h2>Three goals we hear most often.</h2></div>
+    <div class="reasons__grid">
+      <div class="reason"><div class="ic">↓</div><h3>Lower the payment</h3><p>Move to a better rate or longer amortization to ease monthly cash flow.</p></div>
+      <div class="reason"><div class="ic">⛓</div><h3>Consolidate debt</h3><p>Fold high-interest cards and loans into your mortgage at a far lower rate.</p></div>
+      <div class="reason"><div class="ic">🏗</div><h3>Unlock equity</h3><p>Access funds for renovations, education, or an investment property.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap feature">
+    <img src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?auto=format&fit=crop&w=1000&q=80" alt="Reviewing refinancing numbers and budget">
+    <div>
+      <h2>How we protect your interests</h2>
+      <ul>
+        <li>Full penalty &amp; break-even analysis before you commit</li>
+        <li>Side-by-side comparison of staying vs. switching lenders</li>
+        <li>Debt-consolidation plan with a clear payoff timeline</li>
+        <li>Equity take-out structured to keep payments comfortable</li>
+        <li>Straight answers — if refinancing won't help, we'll tell you</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="cta">
+      <p class="eyebrow" style="color:var(--clay-soft)">No obligation</p>
+      <h2>Run the numbers with us.</h2>
+      <p>Send us your current rate and balance and we'll tell you — for free — whether refinancing would save you money.</p>
+      <a class="btn btn--clay" href="index.html#contact">Request my analysis</a>
+    </div>
+  </div>
+</section>
+
+<div id="site-footer"></div>
+
+<script>
+  async function include(id, file){
+    try{ const res = await fetch(file); document.getElementById(id).innerHTML = await res.text(); }
+    catch(e){ console.error('Could not load', file, e); }
+  }
+  include('site-header','header.html');
+  include('site-footer','footer.html');
+</script>
+</body>
+</html>
