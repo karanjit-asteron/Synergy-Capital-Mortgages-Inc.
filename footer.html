@@ -1,0 +1,88 @@
+<!-- ============================================================
+     SYNERGY CAPITAL MORTGAGES INC. — SITE FOOTER (reusable)
+     Styling is contained within this file.
+     ============================================================ -->
+<style>
+  .scm-footer{
+    background:var(--pine,#24262b); color:#e6e7ea;
+    font-family:var(--font-body,sans-serif);
+    margin-top:5rem;
+  }
+  .scm-footer__top{
+    max-width:1200px; margin:0 auto; padding:4rem 1.5rem 2.5rem;
+    display:grid; grid-template-columns:1.6fr 1fr 1fr 1.2fr; gap:2.5rem;
+  }
+  .scm-footer h4{
+    font-family:var(--font-display,serif); font-weight:600; font-size:1.05rem;
+    color:#fff; margin:0 0 1.1rem; letter-spacing:.02em;
+  }
+  .scm-footer__brand b{
+    font-family:var(--font-display,serif); font-size:1.35rem; color:#fff; display:block;
+  }
+  .scm-footer__brand span{
+    color:var(--clay-soft,#7089ac); font-size:.7rem; letter-spacing:.26em;
+    text-transform:uppercase; font-weight:600;
+  }
+  .scm-footer p, .scm-footer li, .scm-footer a{
+    color:#b9bcc2; font-size:.92rem; line-height:1.7; text-decoration:none;
+  }
+  .scm-footer__brand p{ margin:1rem 0 0; max-width:30ch; }
+  .scm-footer ul{ list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:.6rem; }
+  .scm-footer a:hover{ color:var(--clay-soft,#7089ac); }
+  .scm-footer__contact span{ display:block; color:#9a9da4; font-size:.72rem; letter-spacing:.16em; text-transform:uppercase; margin-bottom:.2rem; }
+  .scm-footer__contact strong{ color:#fff; font-weight:600; }
+  .scm-footer__bottom{
+    border-top:1px solid rgba(255,255,255,.12);
+    max-width:1200px; margin:0 auto; padding:1.4rem 1.5rem;
+    display:flex; justify-content:space-between; flex-wrap:wrap; gap:.6rem;
+    font-size:.82rem; color:#9a9da4;
+  }
+  .scm-footer__bottom em{ color:#9a9da4; font-style:normal; }
+  @media (max-width:860px){
+    .scm-footer__top{ grid-template-columns:1fr 1fr; gap:2rem; }
+  }
+  @media (max-width:520px){
+    .scm-footer__top{ grid-template-columns:1fr; }
+  }
+</style>
+
+<footer class="scm-footer">
+  <div class="scm-footer__top">
+    <div class="scm-footer__brand">
+      <b>Synergy Capital</b>
+      <span>Mortgages Inc.</span>
+      <p>Independent mortgage advisors helping Edmonton families and investors borrow smarter — with clarity, care, and access to dozens of lenders.</p>
+    </div>
+
+    <div>
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#why">Why Synergy</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li><a href="index.html#contact">Get Pre-Approved</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h4>Services</h4>
+      <ul>
+        <li><a href="home-purchase.html">Home Purchase</a></li>
+        <li><a href="refinancing.html">Refinancing</a></li>
+        <li><a href="renewals.html">Renewals</a></li>
+      </ul>
+    </div>
+
+    <div class="scm-footer__contact">
+      <h4>Get in touch</h4>
+      <p><span>Office</span><strong>10180 101 Street NW, Suite 3400</strong><br>Edmonton, Alberta&nbsp;T5J 3S4</p>
+      <p style="margin-top:1rem"><span>Phone</span><strong>(780) 555-0142</strong></p>
+      <p style="margin-top:1rem"><span>Email</span><strong>hello@synergycapital.ca</strong></p>
+    </div>
+  </div>
+
+  <div class="scm-footer__bottom">
+    <em>© 2026 Synergy Capital Mortgages Inc. All rights reserved.</em>
+    <em>Proudly serving Edmonton &amp; surrounding Alberta communities.</em>
+  </div>
+</footer>
