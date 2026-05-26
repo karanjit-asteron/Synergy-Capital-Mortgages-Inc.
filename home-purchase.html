@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Synergy Capital Mortgages Inc. | Edmonton Mortgage Advisors</title>
-<meta name="description" content="Independent mortgage advisors in Edmonton, Alberta. Home purchase, refinancing and renewal solutions with access to dozens of lenders.">
+<title>Home Purchase Mortgages | Synergy Capital Mortgages Inc. — Edmonton</title>
+<meta name="description" content="Buy your home in Edmonton with confidence. Pre-approvals, first-time buyer programs, and purchase financing from Synergy Capital Mortgages.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -18,131 +18,62 @@
     --font-body:"Hanken Grotesk",system-ui,sans-serif;
   }
   *{ box-sizing:border-box; margin:0; padding:0; }
-  body{
-    font-family:var(--font-body); color:var(--ink); background:var(--cream);
-    line-height:1.65; -webkit-font-smoothing:antialiased;
-  }
+  body{ font-family:var(--font-body); color:var(--ink); background:var(--cream); line-height:1.65; -webkit-font-smoothing:antialiased; }
   img{ max-width:100%; display:block; }
   .wrap{ max-width:1200px; margin:0 auto; padding:0 1.5rem; }
-  .eyebrow{
-    font-size:.72rem; letter-spacing:.26em; text-transform:uppercase;
-    color:var(--clay); font-weight:700;
-  }
-  h1,h2,h3{ font-family:var(--font-display); font-weight:600; line-height:1.1; color:var(--pine); }
-  .btn{
-    display:inline-block; text-decoration:none; font-weight:600; font-size:.95rem;
-    padding:.85rem 1.6rem; border-radius:999px; transition:transform .2s, background .2s, color .2s;
-  }
+  .eyebrow{ font-size:.72rem; letter-spacing:.26em; text-transform:uppercase; color:var(--clay); font-weight:700; }
+  h1,h2,h3{ font-family:var(--font-display); font-weight:600; line-height:1.12; color:var(--pine); }
+  .btn{ display:inline-block; text-decoration:none; font-weight:600; font-size:.95rem; padding:.85rem 1.6rem; border-radius:999px; transition:transform .2s, background .2s, color .2s; }
   .btn--clay{ background:var(--clay); color:#fff; box-shadow:0 10px 24px -10px rgba(68,89,122,.45); }
   .btn--clay:hover{ background:var(--pine); transform:translateY(-2px); }
   .btn--ghost{ background:transparent; color:var(--pine); border:1.5px solid var(--pine); }
   .btn--ghost:hover{ background:var(--pine); color:#fff; }
 
-  /* HERO */
-  .hero{
-    position:relative; overflow:hidden;
-    background:
-      radial-gradient(900px 500px at 88% -10%, rgba(68,89,122,.12), transparent 60%),
-      radial-gradient(700px 500px at -5% 110%, rgba(68,89,122,.09), transparent 60%),
-      var(--cream);
-  }
-  .hero__grid{
-    display:grid; grid-template-columns:1.05fr .95fr; gap:3.5rem; align-items:center;
-    padding:5rem 0 5.5rem;
-  }
-  .hero h1{ font-size:clamp(2.4rem,5vw,3.9rem); letter-spacing:-.01em; }
-  .hero h1 em{ font-style:italic; color:var(--clay); }
-  .hero p.lead{ color:var(--muted); font-size:1.12rem; margin:1.4rem 0 2rem; max-width:46ch; }
-  .hero__actions{ display:flex; gap:1rem; flex-wrap:wrap; }
-  .hero__media{ position:relative; }
-  .hero__media img{
-    border-radius:22px; height:480px; width:100%; object-fit:cover;
-    box-shadow:0 40px 80px -40px rgba(36,38,43,.5);
-  }
-  .hero__chip{
-    position:absolute; left:-1.5rem; bottom:2rem; background:var(--surface);
-    border-radius:16px; padding:1.1rem 1.3rem; box-shadow:0 20px 50px -25px rgba(36,38,43,.5);
-    display:flex; gap:.9rem; align-items:center; border:1px solid var(--line);
-  }
-  .hero__chip b{ font-family:var(--font-display); font-size:1.7rem; color:var(--pine); display:block; }
-  .hero__chip span{ font-size:.8rem; color:var(--muted); }
-  .hero__dot{ width:42px; height:42px; border-radius:12px; background:var(--cream-2); display:grid; place-items:center; font-size:1.3rem; }
+  /* page hero */
+  .phero{ background:radial-gradient(800px 420px at 90% -20%, rgba(68,89,122,.12), transparent 60%), var(--cream); padding:4.5rem 0 3rem; }
+  .phero .crumbs{ font-size:.85rem; color:var(--muted); margin-bottom:1.2rem; }
+  .phero .crumbs a{ color:var(--clay); text-decoration:none; }
+  .phero h1{ font-size:clamp(2.2rem,4.5vw,3.4rem); max-width:18ch; }
+  .phero h1 em{ font-style:italic; color:var(--clay); }
+  .phero p{ color:var(--muted); font-size:1.1rem; max-width:54ch; margin:1.2rem 0 1.8rem; }
 
-  /* TRUST STRIP */
-  .strip{ background:var(--pine); color:#d9dade; }
-  .strip__inner{ display:flex; flex-wrap:wrap; justify-content:space-between; gap:1.5rem; padding:1.4rem 0; }
-  .strip__item{ font-size:.92rem; display:flex; align-items:center; gap:.6rem; }
-  .strip__item b{ color:var(--clay-soft); font-family:var(--font-display); }
+  .section{ padding:4rem 0; }
+  /* split intro */
+  .split{ display:grid; grid-template-columns:1fr 1fr; gap:3rem; align-items:center; }
+  .split img{ border-radius:20px; height:420px; width:100%; object-fit:cover; box-shadow:0 30px 70px -40px rgba(36,38,43,.5); }
+  .split h2{ font-size:clamp(1.8rem,3.2vw,2.4rem); margin-bottom:1rem; }
+  .split p{ color:var(--muted); margin-bottom:1rem; }
 
-  /* SECTION */
-  .section{ padding:5rem 0; }
-  .section__head{ max-width:60ch; margin-bottom:3rem; }
-  .section__head h2{ font-size:clamp(1.9rem,3.5vw,2.7rem); margin:.6rem 0 .9rem; }
-  .section__head p{ color:var(--muted); font-size:1.05rem; }
+  /* steps */
+  .steps{ background:var(--cream-2); }
+  .steps__grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:1.4rem; margin-top:2.5rem; }
+  .step{ background:var(--surface); border:1px solid var(--line); border-radius:18px; padding:1.6rem; }
+  .step b{ font-family:var(--font-display); font-size:1.6rem; color:var(--clay); display:block; margin-bottom:.5rem; }
+  .step h3{ font-size:1.1rem; margin-bottom:.4rem; }
+  .step p{ color:var(--muted); font-size:.92rem; }
 
-  /* SERVICE CARDS */
-  .cards{ display:grid; grid-template-columns:repeat(3,1fr); gap:1.6rem; }
-  .card{
-    background:var(--surface); border-radius:20px; overflow:hidden;
-    border:1px solid var(--line); display:flex; flex-direction:column;
-    transition:transform .3s ease, box-shadow .3s ease;
-  }
-  .card:hover{ transform:translateY(-6px); box-shadow:0 30px 60px -35px rgba(36,38,43,.45); }
-  .card__num{
-    font-family:var(--font-display); font-size:.85rem; color:var(--clay);
-    font-weight:600; letter-spacing:.1em;
-  }
-  .card__body{ padding:1.8rem; display:flex; flex-direction:column; gap:.7rem; flex:1; }
-  .card__body h3{ font-size:1.35rem; }
-  .card__body p{ color:var(--muted); font-size:.96rem; }
-  .card__link{
-    margin-top:auto; color:var(--pine); font-weight:600; text-decoration:none;
-    display:inline-flex; align-items:center; gap:.4rem; font-size:.95rem;
-  }
-  .card__link:hover{ color:var(--clay); }
-  .card__top{ height:6px; background:linear-gradient(90deg,var(--pine),var(--leaf)); }
-  .card:nth-child(2) .card__top{ background:linear-gradient(90deg,var(--clay),var(--clay-soft)); }
-  .card:nth-child(3) .card__top{ background:linear-gradient(90deg,var(--pine-2),var(--clay)); }
+  /* feature with image */
+  .feature{ display:grid; grid-template-columns:1fr 1fr; gap:3rem; align-items:center; }
+  .feature.rev{ direction:rtl; } .feature.rev > *{ direction:ltr; }
+  .feature img{ border-radius:20px; height:380px; width:100%; object-fit:cover; box-shadow:0 30px 70px -40px rgba(36,38,43,.5); }
+  .feature h2{ font-size:clamp(1.7rem,3vw,2.2rem); margin-bottom:1rem; }
+  .feature ul{ list-style:none; display:grid; gap:.8rem; margin-top:1rem; }
+  .feature li{ display:flex; gap:.7rem; color:var(--muted); }
+  .feature li::before{ content:"✓"; color:var(--leaf); font-weight:700; }
 
-  /* WHY US */
-  .why{ background:var(--cream-2); }
-  .why__grid{ display:grid; grid-template-columns:.95fr 1.05fr; gap:3.5rem; align-items:center; }
-  .why__media{ position:relative; }
-  .why__media img{ border-radius:20px; height:430px; width:100%; object-fit:cover; box-shadow:0 30px 70px -40px rgba(36,38,43,.5); }
-  .why__list{ display:grid; gap:1.4rem; margin-top:1.8rem; }
-  .why__item{ display:flex; gap:1rem; }
-  .why__ic{ flex:0 0 auto; width:44px; height:44px; border-radius:12px; background:var(--pine); color:#fff; display:grid; place-items:center; font-family:var(--font-display); font-weight:600; }
-  .why__item h3{ font-size:1.12rem; margin-bottom:.2rem; }
-  .why__item p{ color:var(--muted); font-size:.95rem; }
+  .section__head{ max-width:60ch; }
+  .section__head h2{ font-size:clamp(1.8rem,3.2vw,2.4rem); margin:.6rem 0; }
 
-  /* CONTACT */
-  .contact{
-    background:
-      radial-gradient(700px 400px at 100% 0%, rgba(68,89,122,.16), transparent 60%),
-      var(--pine);
-    color:#e9eaee; border-radius:28px; padding:3.5rem; margin:0 auto;
-    display:grid; grid-template-columns:1fr 1fr; gap:3rem; align-items:center;
-  }
-  .contact h2{ color:#fff; font-size:clamp(1.9rem,3.5vw,2.6rem); }
-  .contact p{ color:#b9bcc2; margin:1rem 0 1.8rem; }
-  .contact__form{ display:grid; gap:.9rem; }
-  .contact__form input, .contact__form textarea{
-    width:100%; padding:.9rem 1.1rem; border-radius:12px; border:1px solid rgba(255,255,255,.2);
-    background:rgba(255,255,255,.07); color:#fff; font-family:var(--font-body); font-size:.95rem;
-  }
-  .contact__form input::placeholder, .contact__form textarea::placeholder{ color:#9a9da4; }
-  .contact__form button{
-    background:var(--clay); color:#fff; border:0; padding:.95rem; border-radius:12px;
-    font-weight:600; font-size:.98rem; cursor:pointer; font-family:var(--font-body);
-    transition:background .2s, transform .2s;
-  }
-  .contact__form button:hover{ background:var(--clay-soft); transform:translateY(-2px); }
+  /* cta band */
+  .cta{ background:radial-gradient(700px 400px at 0% 0%, rgba(68,89,122,.16), transparent 60%), var(--pine); color:#e9eaee; border-radius:26px; padding:3rem; text-align:center; }
+  .cta h2{ color:#fff; font-size:clamp(1.8rem,3.2vw,2.4rem); }
+  .cta p{ color:#b9bcc2; margin:.9rem auto 1.6rem; max-width:50ch; }
 
   @media (max-width:920px){
-    .hero__grid,.why__grid,.contact{ grid-template-columns:1fr; }
-    .cards{ grid-template-columns:1fr; }
-    .hero__media img,.why__media img{ height:340px; }
-    .contact{ padding:2.4rem; }
+    .split,.feature,.steps__grid{ grid-template-columns:1fr; }
+    .steps__grid{ gap:1rem; }
+    .split img,.feature img{ height:300px; }
+    .feature.rev{ direction:ltr; }
   }
 </style>
 </head>
@@ -150,122 +81,67 @@
 
 <div id="site-header"></div>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="wrap hero__grid">
+<section class="phero">
+  <div class="wrap">
+    <div class="crumbs"><a href="index.html">Home</a> &nbsp;/&nbsp; Home Purchase</div>
+    <p class="eyebrow">Service 01</p>
+    <h1>Buy your Edmonton home with <em>real</em> negotiating power.</h1>
+    <p>A Synergy pre-approval tells sellers you're serious and tells you exactly what you can afford — before you fall in love with a listing. We make the financing the easy part.</p>
+    <a class="btn btn--clay" href="index.html#contact">Start my pre-approval</a>
+  </div>
+</section>
+
+<!-- intro split -->
+<section class="section">
+  <div class="wrap split">
+    <img src="https://images.unsplash.com/photo-1582407947304-fd86f028f716?auto=format&fit=crop&w=1000&q=80" alt="Couple holding keys to their new home">
     <div>
-      <p class="eyebrow">Edmonton, Alberta · Independent Advisors</p>
-      <h1>Mortgages that move <em>with</em> your life, not against it.</h1>
-      <p class="lead">Synergy Capital Mortgages brings dozens of lenders to one table — so you get the right rate, the right structure, and a human who actually answers the phone.</p>
-      <div class="hero__actions">
-        <a class="btn btn--clay" href="index.html#contact">Get Pre-Approved</a>
-        <a class="btn btn--ghost" href="home-purchase.html">Explore Services</a>
-      </div>
-    </div>
-    <div class="hero__media">
-      <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1100&q=80" alt="Modern Edmonton home at dusk">
-      <div class="hero__chip">
-        <div class="hero__dot">★</div>
-        <div><b>40+</b><span>lenders compared for you</span></div>
-      </div>
+      <p class="eyebrow">Purchase financing</p>
+      <h2>First home or fifth — financing tuned to you.</h2>
+      <p>Buying in a competitive market means your offer needs to be both attractive and airtight. We secure a firm pre-approval, lock your rate, and structure your amortization around your monthly comfort, not just the maximum the calculator allows.</p>
+      <p>From the federal First-Time Home Buyer incentives to flexible down-payment strategies, we'll walk you through every option in plain language.</p>
     </div>
   </div>
 </section>
 
-<!-- TRUST STRIP -->
-<div class="strip">
-  <div class="wrap strip__inner">
-    <div class="strip__item"><b>Licensed</b> in Alberta</div>
-    <div class="strip__item"><b>No-cost</b> pre-approvals</div>
-    <div class="strip__item"><b>24 hr</b> typical response</div>
-    <div class="strip__item"><b>Local</b> Edmonton team</div>
+<!-- steps -->
+<section class="section steps">
+  <div class="wrap">
+    <div class="section__head"><p class="eyebrow">How it works</p><h2>From application to keys in four steps.</h2></div>
+    <div class="steps__grid">
+      <div class="step"><b>01</b><h3>Quick chat</h3><p>We learn your goals, timeline and budget in a no-pressure call.</p></div>
+      <div class="step"><b>02</b><h3>Pre-approval</h3><p>We compare lenders and lock the strongest rate available to you.</p></div>
+      <div class="step"><b>03</b><h3>House hunt</h3><p>Shop with confidence knowing your exact buying power.</p></div>
+      <div class="step"><b>04</b><h3>Close</h3><p>We coordinate with your lawyer and lender right through to possession.</p></div>
+    </div>
   </div>
-</div>
+</section>
 
-<!-- SERVICES -->
+<!-- feature with image -->
+<section class="section">
+  <div class="wrap feature">
+    <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=1000&q=80" alt="Bright modern kitchen in a new home">
+    <div>
+      <h2>What you get with Synergy</h2>
+      <ul>
+        <li>Firm, written pre-approvals — not soft estimates</li>
+        <li>Rate holds so a rising market can't derail your plans</li>
+        <li>First-time buyer and new-to-Canada program guidance</li>
+        <li>Down-payment strategies, including gifted and RRSP funds</li>
+        <li>One advisor from first call through possession day</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- cta -->
 <section class="section">
   <div class="wrap">
-    <div class="section__head">
-      <p class="eyebrow">What we do</p>
-      <h2>Three ways we help you borrow better.</h2>
-      <p>Whether you're buying your first place, freeing up equity, or facing a renewal, we tailor the financing to your goals — not the bank's.</p>
-    </div>
-    <div class="cards">
-      <article class="card">
-        <div class="card__top"></div>
-        <div class="card__body">
-          <span class="card__num">01</span>
-          <h3>Home Purchase</h3>
-          <p>First home, next home, or investment property — we structure financing that fits your budget and gets your offer taken seriously.</p>
-          <a class="card__link" href="home-purchase.html">Learn more →</a>
-        </div>
-      </article>
-      <article class="card">
-        <div class="card__top"></div>
-        <div class="card__body">
-          <span class="card__num">02</span>
-          <h3>Refinancing</h3>
-          <p>Lower your payment, consolidate debt, or unlock equity for renovations and investments with a smarter mortgage.</p>
-          <a class="card__link" href="refinancing.html">Learn more →</a>
-        </div>
-      </article>
-      <article class="card">
-        <div class="card__top"></div>
-        <div class="card__body">
-          <span class="card__num">03</span>
-          <h3>Renewals</h3>
-          <p>Don't auto-sign your bank's renewal letter. We shop your renewal across the market so you never leave savings behind.</p>
-          <a class="card__link" href="renewals.html">Learn more →</a>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- WHY US -->
-<section class="section why" id="why">
-  <div class="wrap why__grid">
-    <div class="why__media">
-      <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1000&q=80" alt="Advisor shaking hands with happy clients">
-    </div>
-    <div>
-      <p class="eyebrow">Why Synergy</p>
-      <h2 style="font-size:clamp(1.9rem,3.5vw,2.6rem)">Advice that's on your side — by design.</h2>
-      <div class="why__list">
-        <div class="why__item">
-          <div class="why__ic">✓</div>
-          <div><h3>Independent, not in-house</h3><p>We aren't tied to one bank, so we recommend what's genuinely best for you.</p></div>
-        </div>
-        <div class="why__item">
-          <div class="why__ic">↺</div>
-          <div><h3>Whole-market access</h3><p>Big banks, credit unions, monoline and private lenders — all compared in one place.</p></div>
-        </div>
-        <div class="why__item">
-          <div class="why__ic">☎</div>
-          <div><h3>A real local team</h3><p>You'll work with the same Edmonton advisor from pre-approval through to renewal.</p></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section class="section" id="contact">
-  <div class="wrap">
-    <div class="contact">
-      <div>
-        <p class="eyebrow" style="color:var(--clay-soft)">Let's talk</p>
-        <h2>Get pre-approved in minutes.</h2>
-        <p>Tell us a little about your goals and a Synergy advisor will reach out — usually within one business day. No obligation, no credit-score surprises.</p>
-        <p style="color:#9a9da4;font-size:.9rem">Or call us directly at <strong style="color:#fff">(780) 555-0142</strong></p>
-      </div>
-      <div class="contact__form">
-        <input type="text" placeholder="Full name" aria-label="Full name">
-        <input type="email" placeholder="Email address" aria-label="Email">
-        <input type="tel" placeholder="Phone number" aria-label="Phone">
-        <textarea rows="3" placeholder="What are you hoping to do?" aria-label="Message"></textarea>
-        <button type="button" onclick="alert('Thanks! This is a demo form — connect it to your CRM or email service to receive submissions.')">Request my pre-approval</button>
-      </div>
+    <div class="cta">
+      <p class="eyebrow" style="color:var(--clay-soft)">Ready when you are</p>
+      <h2>Let's find your number.</h2>
+      <p>Get a no-obligation pre-approval and start touring homes knowing exactly what you can afford.</p>
+      <a class="btn btn--clay" href="index.html#contact">Get pre-approved</a>
     </div>
   </div>
 </section>
@@ -273,13 +149,9 @@
 <div id="site-footer"></div>
 
 <script>
-  // Load the shared header & footer (requires the site to be served over http,
-  // e.g. `python3 -m http.server`, or hosted — fetch is blocked on file://).
   async function include(id, file){
-    try{
-      const res = await fetch(file);
-      document.getElementById(id).innerHTML = await res.text();
-    }catch(e){ console.error('Could not load', file, e); }
+    try{ const res = await fetch(file); document.getElementById(id).innerHTML = await res.text(); }
+    catch(e){ console.error('Could not load', file, e); }
   }
   include('site-header','header.html');
   include('site-footer','footer.html');
