@@ -1,0 +1,105 @@
+<!-- ============================================================
+     SYNERGY CAPITAL MORTGAGES INC. — SITE HEADER (reusable)
+     Styling is contained within this file.
+     ============================================================ -->
+<style>
+  :root{
+    --pine:#24262b; --pine-2:#32363f; --leaf:#6b82a6;
+    --clay:#44597a; --clay-soft:#7089ac;
+    --cream:#f5f4f0; --cream-2:#ecebe5; --surface:#ffffff;
+    --ink:#2a2d33; --muted:#6c7077; --line:rgba(36,38,43,.14);
+    --font-display:"Fraunces",Georgia,serif;
+    --font-body:"Hanken Grotesk",system-ui,sans-serif;
+  }
+  .scm-header{
+    position:sticky; top:0; z-index:1000;
+    background:rgba(245,244,240,.82);
+    backdrop-filter:saturate(140%) blur(12px);
+    -webkit-backdrop-filter:saturate(140%) blur(12px);
+    border-bottom:1px solid var(--line);
+    font-family:var(--font-body);
+  }
+  .scm-header__bar{
+    max-width:1200px; margin:0 auto; padding:.85rem 1.5rem;
+    display:flex; align-items:center; justify-content:space-between; gap:1.5rem;
+  }
+  .scm-brand{ display:flex; align-items:center; gap:.7rem; text-decoration:none; }
+  .scm-brand__mark{ width:42px; height:42px; flex:0 0 auto; }
+  .scm-brand__name{ display:flex; flex-direction:column; line-height:1; }
+  .scm-brand__name b{
+    font-family:var(--font-display); font-weight:600;
+    font-size:1.12rem; color:var(--pine); letter-spacing:.01em;
+  }
+  .scm-brand__name span{
+    font-size:.62rem; letter-spacing:.28em; text-transform:uppercase;
+    color:var(--clay); margin-top:.28rem; font-weight:600;
+  }
+  .scm-nav{ display:flex; align-items:center; gap:2rem; }
+  .scm-nav a{
+    text-decoration:none; color:var(--ink); font-weight:500;
+    font-size:.95rem; position:relative; padding:.3rem 0;
+  }
+  .scm-nav a::after{
+    content:""; position:absolute; left:0; bottom:-2px; height:2px; width:0;
+    background:var(--clay); transition:width .28s ease;
+  }
+  .scm-nav a:hover{ color:var(--pine); }
+  .scm-nav a:hover::after{ width:100%; }
+  .scm-cta{
+    background:var(--clay); color:#fff !important; padding:.7rem 1.25rem;
+    border-radius:999px; font-weight:600; font-size:.9rem;
+    box-shadow:0 6px 18px -8px rgba(68,89,122,.45);
+    transition:transform .2s ease, background .2s ease;
+  }
+  .scm-cta::after{ display:none; }
+  .scm-cta:hover{ background:var(--pine); transform:translateY(-2px); color:#fff !important; }
+  .scm-burger{
+    display:none; background:none; border:0; cursor:pointer; padding:.4rem;
+    width:42px; height:42px; border-radius:10px;
+  }
+  .scm-burger span{ display:block; width:22px; height:2px; background:var(--pine); margin:5px auto; transition:.3s; }
+
+  @media (max-width:860px){
+    .scm-burger{ display:block; }
+    .scm-nav{
+      position:absolute; top:100%; left:0; right:0;
+      flex-direction:column; align-items:flex-start; gap:1.1rem;
+      background:var(--cream); border-bottom:1px solid var(--line);
+      padding:1.5rem; max-height:0; overflow:hidden; opacity:0;
+      transition:max-height .35s ease, opacity .25s ease; pointer-events:none;
+    }
+    .scm-header.open .scm-nav{ max-height:420px; opacity:1; pointer-events:auto; }
+  }
+</style>
+
+<header class="scm-header">
+  <div class="scm-header__bar">
+    <a class="scm-brand" href="index.html" aria-label="Synergy Capital Mortgages home">
+      <svg class="scm-brand__mark" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="48" height="48" rx="13" fill="#24262b"/>
+        <path d="M17 31c0-5 4-7 8-9.5S31 17 31 13" stroke="#7089ac" stroke-width="3.4" stroke-linecap="round"/>
+        <path d="M31 17c0 5-4 7-8 9.5S17 31 17 35" stroke="#f5f4f0" stroke-width="3.4" stroke-linecap="round"/>
+        <circle cx="17" cy="31" r="2.6" fill="#7089ac"/>
+        <circle cx="31" cy="17" r="2.6" fill="#f5f4f0"/>
+      </svg>
+      <span class="scm-brand__name">
+        <b>Synergy Capital</b>
+        <span>Mortgages Inc.</span>
+      </span>
+    </a>
+
+    <button class="scm-burger" aria-label="Toggle menu"
+            onclick="this.closest('.scm-header').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="scm-nav">
+      <a href="index.html">Home</a>
+      <a href="home-purchase.html">Home Purchase</a>
+      <a href="refinancing.html">Refinancing</a>
+      <a href="renewals.html">Renewals</a>
+      <a href="index.html#contact">Contact</a>
+      <a class="scm-cta" href="index.html#contact">Get Pre-Approved</a>
+    </nav>
+  </div>
+</header>
